@@ -1,0 +1,6 @@
+{
+    "demo" : [
+        "Definition: In this task, you are given a dialogue from a conversation between an agent and a customer. Your task is to determine the speaker of the dialogue. Answer with \"agent\" or \"customer\".\n\nInput: I have successfully booked your ticket with flight-1017, have a safe journey.\nOutput: agent",
+        "Definition: In this task, you are given a hateful post in English from online platforms. You are expected to classify the post into two classes: aggresive or non-aggresive. An aggresive post is one that expresses feelings and opinions in an abusive way and tries to dominate others. Note that the URLs in the text have been replaced with [Link].\n\nInput: Post: @burnthewitchiii come tell this bitch to get in the fucking sea. Please. Before I cunt punch her. \nOutput: Aggresive"
+    ]
+}

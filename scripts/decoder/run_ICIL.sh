@@ -1,0 +1,26 @@
+CUDA_VISIBLE_DEVICES=0 python src/run_autoreg.py \
+    --do_predict \
+    --predict_with_generate \
+    --evaluation_strategy "no" \
+    --model_name_or_path facebook/opt-30b \
+    --max_source_length 1024 \
+    --max_target_length 64 \
+    --generation_max_length 64 \
+    --max_num_instances_per_task 100 \
+    --max_num_instances_per_eval_task 100 \
+    --add_task_name False \
+    --add_task_definition True \
+    --num_pos_examples 0 \
+    --num_neg_examples 0 \
+    --add_explanation False \
+    --tk_instruct False \
+    --data_dir data/splits/default \
+    --task_dir data/tasks \
+    --output_dir output/opt-30b/ICIL \
+    --overwrite_output_dir \
+    --cache_dir ./cache/ \
+    --overwrite_cache \
+    --per_device_eval_batch_size 1 \
+    --icil True \
+    --demo_path demos/ICIL/ICIL_seed1.json \
+    --adaptive True
