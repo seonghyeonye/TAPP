@@ -1,9 +1,9 @@
 export openai_key=""
 
-data_dir=SuperNat/data/splits/default
-task_dir=SuperNat/data/tasks
+data_dir=data/splits/default
+task_dir=data/tasks
 demo_path=demos/ICIL/ICIL_seed1.json
-output_dir=SuperNat/output/default/gpt3/davinci_Zero_shot_ICL_2shot_seed1
+output_dir=output/ICIL_davinci
 max_num_instances_per_eval_task=100
 
 type="ICIL" 
