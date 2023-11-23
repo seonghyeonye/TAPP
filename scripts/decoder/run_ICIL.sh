@@ -2,7 +2,7 @@ CUDA_VISIBLE_DEVICES=0 python src/run_autoreg.py \
     --do_predict \
     --predict_with_generate \
     --evaluation_strategy "no" \
-    --model_name_or_path facebook/opt-30b \
+    --model_name_or_path facebook/opt-6.7b \
     --max_source_length 1024 \
     --max_target_length 64 \
     --generation_max_length 64 \
@@ -16,7 +16,7 @@ CUDA_VISIBLE_DEVICES=0 python src/run_autoreg.py \
     --tk_instruct False \
     --data_dir data/splits/default \
     --task_dir data/tasks \
-    --output_dir output/opt-30b/ICIL \
+    --output_dir output/opt-6.7b/ICIL \
     --overwrite_output_dir \
     --cache_dir ./cache/ \
     --overwrite_cache \

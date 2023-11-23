@@ -165,6 +165,11 @@ class DataCollatorForNI:
                 source = source + task_name + definition + task_input  
 
             tokenized_source = self.tokenizer(source)["input_ids"]
+
+            # Remove Space for AutoReg Models.
+            if self.decoder_only:
+                source = source.strip()
+
             if len(tokenized_source) <= self.max_source_length:
                 sources.append(source)
             else:
