@@ -5,7 +5,7 @@ This is the official github repository for [Task-Agnostic Prefix Prompt](https:/
 Overview of Task-Agnostic Prefix Prompt (TAPP)
 
 <p align="center">
-  <img src="./ICIL.png" width="80%" height="80%">
+  <img src="./TAPP.png" width="80%" height="80%">
 </p>
 
 
