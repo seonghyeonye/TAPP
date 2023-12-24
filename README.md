@@ -16,7 +16,7 @@ For evaluation dataset, we used SuperNatural-Instructions, which can be assessed
 ## Setting 
 The following command will clone the project: 
 ```
-git clone https://github.com/seonghyeonye/ICIL.git
+git clone https://github.com/seonghyeonye/TAPP.git
 ```
 
 Before experimenting, you can make a virtual environment for the project.
