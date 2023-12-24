@@ -1,8 +1,8 @@
-# In-Context Instruction Learning (ICIL)
-This is the official github repository for [In-Context Instruction Learning](https://arxiv.org/abs/2302.14691).
+# Investigating the Effectiveness of Task-Agnostic Prefix Prompt for Instruction Following (TAPP)
+This is the official github repository for [Task-Agnostic Prefix Prompt](https://arxiv.org/abs/2302.14691).
 
 
-Overview of In-Context Instruction Learning (ICIL)
+Overview of Task-Agnostic Prefix Prompt (TAPP)
 
 <p align="center">
   <img src="./ICIL.png" width="80%" height="80%">
@@ -27,18 +27,18 @@ pip install -r requirements.txt
 ```
 
 ## Run  
-You can run inference with various prompting schemes by running files under `scripts/gpt3` or `scripts/decoder`. For instance, if you want to test our ICIL prompt on GPT-3 (davinci) for 119 Test tasks from SuperNatural-Instructions, you can run
+You can run inference with various prompting schemes by running files under `scripts/gpt3` or `scripts/decoder`. For instance, if you want to test our TAPP on GPT-3 (davinci) for 119 Test tasks from SuperNatural-Instructions, you can run
 ```scripts/gpt3/run_ICIL.sh ```
 
 
-Result of In-Context Instruction Learning (ICIL)
+Result of Task-Agnostic Prefix Prompt (TAPP)
 <p align="center">
   <img src="./result.png" width="80%" height="80%">
 </p>
 
 
-### Irrelevant ICIL
-For Irrelevant ICIL, we randomly corrupt input sentences from the prompts with sentences from `cc_news`. To access this file, please visit our [google drive](https://drive.google.com/file/d/1Rl3jzQqNvP2Jzics9N4rhm1eF3pj5gix/view?usp=share_link). we have downloaded the huggingface `cc_news` dataset from [here](https://huggingface.co/datasets/cc_news) and parsed using `en_core_sm` from `spacy` and made it into a .txt file comprised of its sentences.
+### Irrelevant TAPP
+For Irrelevant TAPP, we randomly corrupt input sentences from the prompts with sentences from `cc_news`. To access this file, please visit our [google drive](https://drive.google.com/file/d/1Rl3jzQqNvP2Jzics9N4rhm1eF3pj5gix/view?usp=share_link). we have downloaded the huggingface `cc_news` dataset from [here](https://huggingface.co/datasets/cc_news) and parsed using `en_core_sm` from `spacy` and made it into a .txt file comprised of its sentences.
 
 But under `demo` directory, we have all the `irr_ICIL` demos already extracted, so instead, you can run `run_ICIL.sh`(instaed of `run_irr_ICIL.sh`) after you change the *--demo_path* option.
 
